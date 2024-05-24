@@ -1,0 +1,23 @@
+{
+    "name": "@lesnoypudge/types-utils-base",
+    "version": "1.0.0",
+    "description": "lesnoypudge's types-utils-base",
+    "main": "./index.d.ts",
+    "scripts": {
+        "deploy": "git add . && git commit -m 'update' && git push && git status",
+        "publish": "npm publish --access public"
+    },
+    "author": "LesnoyPudge",
+    "license": "ISC",
+    "keywords": [
+        "lesnoypudge",
+        "types-utils-base"
+    ],
+    "dependencies": {
+        "ts-essentials": "^10.0.0",
+        "type-fest": "^4.18.2"
+    },
+    "devDependencies": {
+        "typescript": "^5.4.5"
+    }
+}
