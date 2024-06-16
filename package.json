@@ -1,6 +1,6 @@
 {
     "name": "@lesnoypudge/types-utils-base",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "description": "lesnoypudge's types-utils-base",
     "main": "./index.d.ts",
     "exports": {
@@ -19,8 +19,7 @@
         "types-utils-base"
     ],
     "dependencies": {
-        "ts-essentials": "^10.0.0",
-        "type-fest": "^4.20.0"
+        "type-fest": "^4.20.1"
     },
     "devDependencies": {
         "typescript": "^5.4.5"

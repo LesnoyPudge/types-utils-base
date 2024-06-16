@@ -1,3 +1,3 @@
-import { T } from "index";
+import { T } from "./namespace";
 
-// type some = T.SimplifyDeep
+type some = T.UnknownRecord
