@@ -17,3 +17,5 @@ export type SimplifyDeep<T> = {
             : T[KeyType]
     );
 } & {};
+
+export type StrictOmit = Lib.Except;
