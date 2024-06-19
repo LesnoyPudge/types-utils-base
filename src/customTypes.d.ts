@@ -3,19 +3,22 @@ import * as Lib from 'src/libs';
 
 
 export type Override<
-    Source extends Lib.AnyRecord, 
-    Key extends keyof Source,
-    NewValue,
+    _Source extends Lib.AnyRecord, 
+    _Key extends keyof Source,
+    _NewValue,
 > = {
     [K in keyof Source]: K extends Key ? NewValue : Source[K];
 };
 
-export type SimplifyDeep<T> = { 
-    [KeyType in keyof T]: (
-        T[KeyType] extends object 
-            ? SimplifyDeep<T[KeyType]> 
-            : T[KeyType]
+export type SimplifyDeep<_Source> = { 
+    [KeyType in keyof _Source]: (
+        _Source[KeyType] extends object 
+            ? SimplifyDeep<_Source[KeyType]> 
+            : _Source[KeyType]
     );
 } & {};
 
-export type StrictOmit = Lib.Except;
+export type StrictOmit<
+    _ObjectType, 
+    _KeysType extends keyof ObjectType
+> = Lib.Except<_ObjectType, _KeysType, {requireExactProps: true}>;
