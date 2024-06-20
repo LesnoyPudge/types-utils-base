@@ -22,3 +22,5 @@ export type StrictOmit<
     _ObjectType, 
     _KeysType extends keyof ObjectType
 > = Lib.Except<_ObjectType, _KeysType, {requireExactProps: true}>;
+
+export type NonEmptyArray<_Type> = [_Type, ..._Type[]];
