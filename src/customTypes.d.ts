@@ -24,3 +24,8 @@ export type StrictOmit<
 > = Lib.Except<_ObjectType, _KeysType, {requireExactProps: true}>;
 
 export type NonEmptyArray<_Type> = [_Type, ..._Type[]];
+
+export type AnyFunction<
+    _Args = any[], 
+    _Return = any
+> = (...args: _Args) => _Return;
