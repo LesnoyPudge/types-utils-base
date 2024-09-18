@@ -1,6 +1,8 @@
 import { T } from "./namespace";
 
 type some = T.UnknownRecord
+type qwe = T.Narrow<{}>
+
 
 const some = (data: string) => {
     return data;
