@@ -10,7 +10,6 @@ export type Override<
     [K in keyof _Source]: K extends _Key ? _NewValue : _Source[K];
 };
 
-
 // export type SimplifyDeep<_Source> = { 
 //     [KeyType in keyof _Source]: (
 //         _Source[KeyType] extends object 
@@ -27,6 +26,6 @@ export type StrictOmit<
 export type NonEmptyArray<_Type> = [_Type, ..._Type[]];
 
 export type AnyFunction<
-    _Args extends unknown[] = any[], 
+    _Args extends Lib.UnknownArray = any[], 
     _Return = any
 > = (...args: _Args) => _Return;

@@ -18,3 +18,5 @@ const construct = <
 }
 
 const qwe = construct(some, '')
+
+// type qwezxc = T.StringKeyOf
