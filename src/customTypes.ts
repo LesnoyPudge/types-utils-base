@@ -29,3 +29,10 @@ export type AnyFunction<
     _Args extends Lib.UnknownArray = any[], 
     _Return = any
 > = (...args: _Args) => _Return;
+
+export type AnyRecord<
+    _Keys extends PropertyKey = PropertyKey,
+    _Values = any
+> = Record<_Keys, _Values>;
+
+export type VoidFunction = () => void;
