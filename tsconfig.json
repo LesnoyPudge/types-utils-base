@@ -13,7 +13,7 @@
         "target": "ESNext",
         "moduleDetection": "force",
         "outDir": "build",
-        "skipLibCheck": true,
+        "skipLibCheck": false,
         "strict": true,
         "moduleResolution": "Node",
         "esModuleInterop": true,

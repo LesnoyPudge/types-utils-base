@@ -36,3 +36,7 @@ export type AnyRecord<
 > = Record<_Keys, _Values>;
 
 export type VoidFunction = () => void;
+
+type FalsyValues = false | 0 | 0n | '' | null | undefined;
+
+export type Truthy<_Value> = _Value extends FalsyValues ? never : _Value;
