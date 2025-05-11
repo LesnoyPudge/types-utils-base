@@ -25,5 +25,7 @@
         "declarationMap": false,
         "baseUrl": ".",
         "declarationDir": "build",
+        "allowImportingTsExtensions": true,
+        "noEmit": true
     }
 }
