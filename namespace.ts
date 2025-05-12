@@ -1,1 +1,0 @@
-export * as T from "./src/index.ts";

@@ -1,4 +1,4 @@
-import { T } from "./namespace";
+import { T } from "./index";
 
 type some = T.UnknownRecord
 type qwe = T.Narrow<{}>

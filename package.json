@@ -1,11 +1,11 @@
 {
     "name": "@lesnoypudge/types-utils-base",
-    "version": "3.7.2",
+    "version": "4.0.0",
     "description": "lesnoypudge's types-utils-base",
     "main": "./index.ts",
     "exports": {
         ".": "./index.ts",
-        "./namespace": "./namespace.ts",
+        "./namespace": "./index.ts",
         "./package.json": "./package.json"
     },
     "scripts": {
